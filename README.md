@@ -1,29 +1,46 @@
 🎧 Mon Super DJ - Système Interactif Live
 
-Bienvenue sur le dépôt officiel du projet Mon Super DJ. Cette application est conçue pour permettre une interaction fluide et en temps réel entre le public d'une soirée et le DJ.
+Bienvenue sur le dépôt officiel du projet Mon Super DJ. Cette application permet une interaction fluide et en temps réel entre le public d'une soirée et le DJ, sans besoin de base de données complexe.
 
-🚀 À propos du projet
+🚀 Accès Live
 
-Mon Super DJ est une solution légère et autonome conçue pour gérer les demandes de morceaux en direct. Fini les papiers volants ou les demandes oubliées : tout est centralisé.
+L'application est disponible ici :
+👉 Accéder à l'application DJ Live
+
+🛠️ À propos du projet
+
+Le système repose sur une architecture "No-Backend" utilisant le localStorage du navigateur. Cela permet une synchronisation instantanée entre vos différents onglets (Public vs Régie) et une simplicité d'utilisation maximale.
 
 ✨ Fonctionnalités principales
 
-Mode Invité : Un formulaire mobile-friendly permettant au public de soumettre un titre, un artiste et une dédicace.
+Mode Invité : Formulaire mobile-friendly pour soumettre titres et dédicaces.
 
-Console DJ (Dashboard) : Une vue d'ensemble pour le DJ avec statistiques, tri des demandes (En attente, En cours, Joué) et synchronisation en direct via le navigateur.
+Console DJ : Interface de gestion avec statistiques et suivi du statut des morceaux.
 
-Système QR Code : Générateur de QR Code intégré pour diffuser facilement le lien vers l'application dans la salle.
+Système QR Code : Générateur intégré pour diffuser le lien vers l'application instantanément.
 
-🛠️ Installation & Lancement
+⚙️ Installation & Lancement
 
-Clonez ce dépôt ou téléchargez les fichiers.
+Cloner le dépôt : git clone https://github.com/VOTRE_NOM/dj-flow-system.git
 
-Ouvrez index.html dans n'importe quel navigateur web moderne.
+Usage : Ouvrez simplement systeme_dj_live.html dans un navigateur.
 
-Aucun serveur n'est requis : l'application utilise le localStorage de votre navigateur pour fonctionner instantanément.
+📦 Mise à jour du site
 
-📦 Déploiement
+Ce projet est lié à Netlify pour une mise en ligne automatique. Pour mettre le site à jour :
 
-Ce projet est optimisé pour être déployé sur Netlify. Il vous suffit de glisser-déposer le dossier racine de ce projet dans Netlify Drop pour obtenir une URL publique et commencer vos soirées !
+Modifiez votre fichier systeme_dj_live.html sur votre ordinateur.
 
-Développé pour une expérience de mix interactive et sans friction.
+Poussez (upload) vos modifications sur GitHub.
+
+Netlify détecte le changement et publie la nouvelle version automatiquement en quelques secondes.
+
+💡 FAQ / Dépannage
+
+Les données disparaissent ? Elles sont stockées dans le cache de votre navigateur. Si vous changez d'ordinateur, les données ne sont pas transférées.
+
+Le QR code ne fonctionne pas ? Assurez-vous que le lien configuré dans l'application pointe vers votre URL publique Netlify, et non vers un fichier local (file:///).
+
+Problème d'affichage ? Si le site ne semble pas à jour, forcez le rafraîchissement (Ctrl + F5).
+
+Développé pour une expérience de mix interactive.
